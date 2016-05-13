@@ -32,7 +32,6 @@ h2 {
 }
 
 header {
-	width: 100vw;
 	height: 50vh;
 	margin: 0 auto;
 	/*background-color: #F0F2F3;*/
@@ -44,7 +43,7 @@ header {
 }
 
 header h1 {
-	float: left; 
+	float: left;
 	margin: 0.5em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
@@ -97,7 +96,7 @@ header img {
 }*/
 
 .wwa h1 {
-	float: left; 
+	float: left;
 	margin: 0.5em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
@@ -107,10 +106,10 @@ header img {
 	padding-top: 1em;
 }
 .wwa hr {
-	float: left;
+	float: right;
 	border: none;
-	height: 0.2em; 
-	width: 90%;
+	height: 0.2em;
+	width: 95%;
 	background-color: #0D1419;
 	margin: 0 1em 1em 1em;
 	padding-bottom: 1em;
@@ -173,6 +172,7 @@ header img {
 
 .item-6-background {
 	background-color: #03A9F4;
+	color: white;
 }
 
 .item-7-background {
@@ -234,6 +234,8 @@ header img {
 .hire h2 {
 	text-align: center;
 }
+
+/* ========================= Nav Bar ========================= */
 
 .navbar {
 	position: fixed;
@@ -365,7 +367,7 @@ header img {
 .overlay nav {
 	position: relative;
 	height: 80%;
-	top: 50%;
+	top: 35%;
 	-webkit-transform: translateY(-40%);
 	transform: translateY(-40%);
 	font-size: 1.5em;
@@ -384,10 +386,14 @@ header img {
 .overlay ul li {
 	display: block;
 	height: 25%;
-	height: calc(100% / 5);
 	min-height: 34px;
 	position: relative;
 	opacity: 0;
+}
+
+.overlay ul li img {
+	display: block;
+	position: relative;
 }
 
 .overlay ul li a {
@@ -442,6 +448,7 @@ header img {
 	}
 }
 
+/* ========================= Nav Bar End  ========================= */
 
 /* ========================= TABLET & DESKTOP ========================= */
 
@@ -467,12 +474,14 @@ header img {
 	.hero p {
 		text-align: center;
 		margin: 13vh 20vw 0 20vw;
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	.wwa h1 {
 		float: right;
+		text-align: right;
 		margin: 1em;
 		font-size: 4em;
+		line-height: 1.1em;
 	}
 	.wwa p {
 		text-align: center;

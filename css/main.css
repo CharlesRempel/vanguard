@@ -32,7 +32,6 @@ h2 {
 }
 
 header {
-	width: 100vw;
 	height: 50vh;
 	margin: 0 auto;
 	/*background-color: #F0F2F3;*/
@@ -44,7 +43,7 @@ header {
 }
 
 header h1 {
-	float: left; 
+	float: left;
 	margin: 0.5em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
@@ -97,7 +96,7 @@ header img {
 }*/
 
 .wwa h1 {
-	float: left; 
+	float: left;
 	margin: 0.5em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
@@ -107,10 +106,10 @@ header img {
 	padding-top: 1em;
 }
 .wwa hr {
-	float: left;
+	float: right;
 	border: none;
-	height: 0.2em; 
-	width: 90%;
+	height: 0.2em;
+	width: 95%;
 	background-color: #0D1419;
 	margin: 0 1em 1em 1em;
 	padding-bottom: 1em;
@@ -129,7 +128,7 @@ header img {
 .wwd {
 	width: 100%;
 	float: left;
-	padding: 2em 0 4em 0;
+	padding: 2em 0 0 0;
 }
 
 .wwd h3 {
@@ -173,6 +172,7 @@ header img {
 
 .item-6-background {
 	background-color: #03A9F4;
+	color: white;
 }
 
 .item-7-background {
@@ -234,6 +234,63 @@ header img {
 .hire h2 {
 	text-align: center;
 }
+#cowboy section h2{
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+#cowboy section{
+	background-color: inherit;
+	-webkit-transition: all .75s ease-out;
+	transition: all .75s ease-out;
+}
+#cowboy section:hover{
+	color: white;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#cowboy section.cases:hover{
+	background-color: #29B6F6;
+}
+#cowboy section.process:hover{
+	background-color: #039BE5;
+}
+#cowboy .team:hover{
+	background-color: #0288D1;
+}
+#cowboy .hire:hover{
+	background-color: #01579B;
+}
+
+#cowboy h2{
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+	.caseStudly{
+		display: none;
+	}
+	.study{
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	.display{
+		display:block;
+	}
+
+#caseStudy img{
+	transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+}
+
+/* ========================= Nav Bar ========================= */
 
 .navbar {
 	position: fixed;
@@ -365,7 +422,7 @@ header img {
 .overlay nav {
 	position: relative;
 	height: 80%;
-	top: 50%;
+	top: 35%;
 	-webkit-transform: translateY(-40%);
 	transform: translateY(-40%);
 	font-size: 1.5em;
@@ -384,10 +441,14 @@ header img {
 .overlay ul li {
 	display: block;
 	height: 25%;
-	height: calc(100% / 5);
 	min-height: 34px;
 	position: relative;
 	opacity: 0;
+}
+
+.overlay ul li img {
+	display: block;
+	position: relative;
 }
 
 .overlay ul li a {
@@ -442,6 +503,10 @@ header img {
 	}
 }
 
+/* ========================= Nav Bar End  ========================= */
+
+
+
 
 /* ========================= TABLET & DESKTOP ========================= */
 
@@ -467,12 +532,14 @@ header img {
 	.hero p {
 		text-align: center;
 		margin: 13vh 20vw 0 20vw;
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	.wwa h1 {
 		float: right;
+		text-align: right;
 		margin: 1em;
 		font-size: 4em;
+		line-height: 1.1em;
 	}
 	.wwa p {
 		text-align: center;

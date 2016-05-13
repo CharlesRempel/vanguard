@@ -234,7 +234,11 @@ header img {
 .hire h2 {
 	text-align: center;
 }
-
+#cowboy section h2{
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
 #cowboy section{
 	background-color: inherit;
 	-webkit-transition: all .75s ease-out;
@@ -257,6 +261,35 @@ header img {
 #cowboy .hire:hover{
 	background-color: #01579B;
 }
+
+#cowboy h2{
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+	.caseStudly{
+		display: none;
+	}
+	.study{
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	.display{
+		display:block;
+	}
+
+#caseStudy img{
+	transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+}
+
 /* ========================= Nav Bar ========================= */
 
 .navbar {
@@ -471,6 +504,9 @@ header img {
 }
 
 /* ========================= Nav Bar End  ========================= */
+
+
+
 
 /* ========================= TABLET & DESKTOP ========================= */
 

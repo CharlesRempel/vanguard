@@ -128,7 +128,7 @@ header img {
 .wwd {
 	width: 100%;
 	float: left;
-	padding: 2em 0 4em 0;
+	padding: 2em 0 0 0;
 }
 
 .wwd h3 {
@@ -235,6 +235,28 @@ header img {
 	text-align: center;
 }
 
+#cowboy section{
+	background-color: inherit;
+	-webkit-transition: all .75s ease-out;
+	transition: all .75s ease-out;
+}
+#cowboy section:hover{
+	color: white;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#cowboy section.cases:hover{
+	background-color: #29B6F6;
+}
+#cowboy section.process:hover{
+	background-color: #039BE5;
+}
+#cowboy .team:hover{
+	background-color: #0288D1;
+}
+#cowboy .hire:hover{
+	background-color: #01579B;
+}
 /* ========================= Nav Bar ========================= */
 
 .navbar {

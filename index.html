@@ -9,6 +9,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="js/vendor/modernizr.js"></script>
@@ -36,9 +37,11 @@
 		<div class="overlay" id="overlay">
 			<nav>
 				<ul>
-					<li><a href="index.html"><img src="img/vanguardLogoNoText.png" id="logo"></a></li>
+					<li>
+						<a href="index.html"><img src="img/vanguardLogoNoText.png" id="logo"></a>
+					</li>
 					<li><a href="#">Agency</a></li>
-					<li><a href="#">Case Studies</a></li>
+					<li><a href="#work">Case Studies</a></li>
 					<li><a href="#">Our Blog</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
@@ -58,8 +61,13 @@
 	</section>
 
 	<section class="wwa">
-		<h1>OUR<br>PHILOSOPHY</h1><br><br><hr>
-		<p>We believe that creativity has no boundaries and a creative vision transcends the media it is created in. We are inspired by people, emotion and life experiences; from the burning neon euphoria of being in the city for the first time, to the briny, windswept holidays by the seaside. Our design solutions are sometimes a little left-of-centre, often drawing from design sensibilities from the past and splicing them with cutting edge technology, giving all our projects a highly bespoke personality that not only fulfills the brief, but exceeds it.</p>
+		<h1>OUR<br>PHILOSOPHY</h1>
+		<br>
+		<br>
+		<hr>
+		<p>We believe that creativity has no boundaries and a creative vision transcends the media it is created in. We are inspired by people, emotion and life experiences; from the burning neon euphoria of being in the city for the first time, to the briny,
+			windswept holidays by the seaside. Our design solutions are sometimes a little left-of-centre, often drawing from design sensibilities from the past and splicing them with cutting edge technology, giving all our projects a highly bespoke personality
+			that not only fulfills the brief, but exceeds it.</p>
 	</section>
 
 	<section class="wwd">
@@ -105,33 +113,62 @@
 		</div>
 	</section>
 
-<div id="cowboy">
-	<section class="cases">
-		<h2 id="hidden">Case Studies</h2>
-		<div id="caseStudy" class="caseStudly">
-			<img src="img/aa.png" class="study" />
-			<img src="img/bdc.png" class="study" />
-			<img src="img/pdh1.png" class="study" />
-			<img src="img/pdh1.png" class="study" />
-			<img src="img/msn.png" class="study" />
-			<img src="img/cb.png" class="study" />
-		</div>
-	</section>
+	<div id="cowboy">
+		<section id="work" class="cases">
+			<h2 id="hidden">Case Studies</h2>
+			<div id="caseStudy" class="caseStudly">
+				<div class="showBtn">
+					<img src="img/aa.png" class="aa" />
+					<a class="descBtn" type="button" href="#">Go to Site</a>
+					<a class="moreBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/bdc.png" class="bdc" />
+					<a class="rightdescBtn" type="button" href="#">Go to Site</a>
+					<a class="rightmoreBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/pdh1.png" class="pdh1" />
+					<a class="descmidBtn" type="button" href="#">Watch</a>
+					<a class="moremidBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/pdh2.png" class="pdh1" />
+					<a class="descmidBtn" type="button" href="#">Watch</a>
+					<a class="moremidBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/spaceroads.png" class="spaceroads" />
+					<a class="descmidBtn" type="button" href="#">Watch</a>
+					<a class="moremidBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/msn.png" class="msn" />
+					<a class="descBtn" type="button" href="#">Go to Site</a>
+					<a class="moreBtn" type="button" href="#">Description</a>
+				</div>
+				<div class="showBtn">
+					<img src="img/cb.png" class="cb" />
+					<a class="rightdescBtn" type="button" href="#">Go to Site</a>
+					<a class="rightmoreBtn" type="button" href="#">Description</a>
+				</div>
+			</div>
+		</section>
 
-	<section class="process">
-		<h2>The Process</h2>
-	</section>
+		<section class="process">
+			<h2>The Process</h2>
+		</section>
 
-	<section class="team">
-		<h2>The Team</h2>
-	</section>
+		<section class="team">
+			<h2>The Team</h2>
+		</section>
 
-	<section class="hire">
-		<h2>Hire Us</h2>
-	</section>
-</div>
+		<section class="hire">
+			<h2>Hire Us</h2>
+		</section>
+	</div>
 	<script>
-		$('#toggle').click(function () {
+		$('#toggle').click(function() {
 			$(this).toggleClass('active');
 			$('#overlay').toggleClass('open');
 		});

@@ -483,11 +483,10 @@ header img {
     }
 
 		.aa {
-			margin-left: 100px;
+				margin-left: 100px;
 		    padding: 2em;
 				width: 550px;
 				height: auto;
-				float: left;
 		}
 		.bdc {
 		    padding: 2em;
@@ -516,18 +515,74 @@ header img {
 				height: auto;
 		}
 
+div.showBtn{
+	position: relative;
+	float: left;
+}
 
-.coffee {
-		    transition: all 1s ease-in;
-		    -webkit-transition: all 1s ease-in;
-		}
-.workbuttons{
-	transition: all 1s ease-in;
-	-webkit-transition: all 1s ease-in;
-	background-color: transparent;
-	border-color: #B82601;
-	border-radius: 2px;
-	border: 3px;
+div.showBtn a{
+	display: none;
+}
+
+div.showBtn:hover a{
+	display: block;
+	position: absolute;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+	transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+div.showBtn:hover a:hover,
+div.showBtn:hover a:hover:active{
+	background-color: #fff;
+  color: #000;
+	transition: background-color 0.3s ease-in,
+						 color 0.3s ease-in;
+}
+
+/*top and bottom left imgs*/
+.descBtn{
+	top: 50%;
+	left: 22%;
+}
+
+.moreBtn{
+	top: 50%;
+	left: 61.5%;
+}
+
+/*top and bottom right imgs*/
+.rightdescBtn{
+	top: 50%;
+	left: 10%;
+}
+
+.rightmoreBtn{
+	top: 50%;
+	left: 55%;
+}
+
+/*middle row imgs*/
+.descmidBtn{
+	top: 25%;
+	left: 25%;
+}
+
+.moremidBtn{
+	top: 50%;
+	left: 25%;
+}
+
+
+
+div.showBtn:hover img{
+	opacity: 0.5;
 }
 
 }

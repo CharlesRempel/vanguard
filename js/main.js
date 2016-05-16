@@ -8,3 +8,13 @@ $(function() {
         $('#caseStudy').toggleClass('display');
     });
 });
+
+$(function() {
+
+  var image = document.getElementById("img");
+
+  $('#affirmingAnimals .aa').onMouseIN(function(e) {
+      e.preventDefault();
+      $(image).toggleClass('workbuttons');
+  });
+});

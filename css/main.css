@@ -170,6 +170,9 @@ header img {
     background-color: #01579B;
     color: white;
 }
+
+/*============= Tabs(not content) ===================*/
+
 .cases {
     width: 100%;
     float: left;
@@ -240,12 +243,20 @@ header img {
     -ms-user-select: none;
     user-select: none;
 }
-.caseStudly {
+.hide {
     display: none;
 }
 .display {
     display: block;
 }
+/*============= Tabs(not content) End ===================*/
+
+/*============= Tabs(content) ===================*/
+
+
+
+
+
 
 /* ========================= Nav Bar ========================= */
 

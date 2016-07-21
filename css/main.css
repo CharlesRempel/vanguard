@@ -18,6 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #585858;
 }
+
 h2 {
     text-transform: uppercase;
 }
@@ -171,6 +172,136 @@ header img {
     color: white;
 }
 
+/*==============Team styles =======================*/
+h4{
+  text-align: left;
+  font-weight: bold;
+}
+
+h5{
+  text-align: left;
+  font-style: italic;
+}
+
+.colRh4{
+  text-align: right;
+  font-weight: bold;
+}
+
+.colRh5{
+  text-align: right;
+  font-style: italic;
+}
+
+.colRp{
+  text-align: right;
+}
+
+.rowTopPad{
+  margin-top: 2em;
+}
+
+/*============= Case Study style ===================*/
+
+div.showBtn{
+	position: relative;
+	float: left;
+}
+
+div.showBtn a{
+	display: none;
+}
+
+div.showBtn:hover a{
+	display: block;
+	position: absolute;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+	transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+div.showBtn:hover a:hover,
+div.showBtn:hover a:hover:active{
+	background-color: #fff;
+  color: #000;
+	transition: background-color 0.3s ease-in,
+						 color 0.3s ease-in;
+}
+
+.csPad{
+  padding: 2em;
+}
+
+/*top and bottom left imgs*/
+.descBtn{
+	top: 25%;
+	left: 25%;
+}
+
+.moreBtn{
+	top: 50%;
+	left: 25%;
+}
+
+/*top and bottom right imgs*/
+.rightdescBtn{
+	top: 50%;
+	left: 25%;
+}
+
+.rightmoreBtn{
+	top: 25%;
+	left: 25%;
+}
+
+/*middle row imgs*/
+.descmidBtn{
+	top: 25%;
+	left: 25%;
+}
+
+.moremidBtn{
+	top: 50%;
+	left: 25%;
+}
+
+
+
+div.showBtn:hover img{
+	opacity: 0.5;
+}
+
+/*=============Hire us ============================*/
+
+label{color: rgb(171, 171, 171);}
+
+.labelchange{
+  color: white;
+}
+
+.btncontact{
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  color: rgb(171, 171, 171);
+  border-color: #FFB034;
+  -webkit-transition: all .75s ease-out;
+  transition: all .75s ease-out;
+}
+
+.btncontact:hover{
+  color: white;
+  background-color: #FFB034;
+}
+
 /*============= Tabs(not content) ===================*/
 
 .cases {
@@ -247,7 +378,7 @@ header img {
     display: none;
 }
 .display {
-    display: block;
+    display: block !important;
 }
 /*============= Tabs(not content) End ===================*/
 
@@ -278,6 +409,10 @@ header img {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
     z-index: 500;
+    background-color: transparent;
+}
+.button:hover{
+  background-color: transparent;
 }
 #btn-back {
     position: absolute;
@@ -493,79 +628,15 @@ header img {
         width: 50%;
     }
 
-		.aa {
-				margin-left: 100px;
-		    padding: 2em;
-				width: 550px;
-				height: auto;
-		}
-		.bdc {
-		    padding: 2em;
-				width: 550px;
-				height: auto;
-		}
-		.pdh1 {
-		    padding: 2em;
-				width: 400px;
-				height: auto;
-		}
-		.spaceroads {
-				padding: 2em;
-				width: 400px;
-				height: auto;
-		}
-		.msn {
-				margin-left: 100px;
-		    padding: 2em;
-				width: 550px;
-				height: auto;
-		}
-		.cb {
-		    padding: 2em;
-				width: 550px;
-				height: auto;
-		}
-
-div.showBtn{
-	position: relative;
-	float: left;
-}
-
-div.showBtn a{
-	display: none;
-}
-
-div.showBtn:hover a{
-	display: block;
-	position: absolute;
-  width: 200px;
-  padding: 8px;
-  color: #fff;
-  border: 1px solid #fff;
-	transition: background-color 0.2s ease-out,
-              color 0.2s ease-out;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-}
-
-div.showBtn:hover a:hover,
-div.showBtn:hover a:hover:active{
-	background-color: #fff;
-  color: #000;
-	transition: background-color 0.3s ease-in,
-						 color 0.3s ease-in;
-}
-
 /*top and bottom left imgs*/
 .descBtn{
 	top: 50%;
-	left: 22%;
+	left: 12%;
 }
 
 .moreBtn{
 	top: 50%;
-	left: 61.5%;
+	left: 55%;
 }
 
 /*top and bottom right imgs*/
@@ -577,23 +648,6 @@ div.showBtn:hover a:hover:active{
 .rightmoreBtn{
 	top: 50%;
 	left: 55%;
-}
-
-/*middle row imgs*/
-.descmidBtn{
-	top: 25%;
-	left: 25%;
-}
-
-.moremidBtn{
-	top: 50%;
-	left: 25%;
-}
-
-
-
-div.showBtn:hover img{
-	opacity: 0.5;
 }
 
 }
